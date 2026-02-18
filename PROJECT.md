@@ -44,7 +44,7 @@ RIW2/
 │       ├── llm_client.py      # 封装Gemini API调用
 │       └── logger.py          # 系统日志记录
 │
-├── universes/                 # [内容层] 具体的小世界定义
+├── universe/                 # [内容层] 具体的小世界定义
 │   ├── __init__.py
 │   ├── base_world.py          # 世界基类
 │   │
