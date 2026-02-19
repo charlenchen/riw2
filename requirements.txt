@@ -1,2 +1,5 @@
 PyYAML
 jinja2
+google-generativeai
+openai
+python-dotenv

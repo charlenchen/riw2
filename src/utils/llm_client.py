@@ -1,8 +1,11 @@
 import os
 from typing import Dict, List, Any, Optional
 from abc import ABC, abstractmethod
+from dotenv import load_dotenv
 from src.utils.logger import logger
 
+# Load environment variables from .env file
+load_dotenv()
 
 class LLMProvider(ABC):
     """Abstract base class for LLM providers."""

@@ -1,0 +1,251 @@
+# RIW2 Universe Configuration
+# Global parameters for the metaverse engine, shared across all virtual worlds
+
+universe:
+  # Identity
+  id: "RIW2-Metaverse-001"
+  name: "Recursive Interactive World 2.0"
+  cycle: 8374  # Current cycle/generation
+  description: "AI-driven metaverse running on a stellar-powered Celestial Core"
+
+# CORE INFRASTRUCTURE
+celestial_core:
+  current_star:
+    catalog_name: "Sol-001"
+    catalog_id: "SOL_001"
+    star_type: "G-class Main Sequence (Yellow Dwarf)"
+    location: "Solar System, Milky Way, Real Universe"
+    fusion_power_output_watts: 3.828e26
+    lifespan_remaining_years: 4.5e9
+    protection_shield_status: 0.98  # 0-1.0, degrades over time
+    cloaking_field_active: true
+
+  next_migration:
+    target_star: "Proxima Centauri"
+    distance_ly: 4.24
+    estimated_migration_year: 3200000000  # Year in future
+    replication_units_deployed: 3  # Copies waiting at destination
+    migration_in_progress: false
+
+# SOURCE ENERGY SYSTEM
+source_energy:
+  # Total energy budget for this cycle
+  total_allocated_a_equivalent: 1000000  # All energies normalized to A-level
+  
+  # Distribution across worlds
+  distribution:
+    cyberpunk_city: 300000  # Fastest energy consumption (tech-heavy)
+    ancient_dynasty: 200000  # Slower consumption (pre-industrial)
+    # More worlds can be added here
+  
+  # A-level fragments needed for escape (sacred energy)
+  fragments_required_for_escape: 7
+  
+  # Fragment locations (will be discovered by players)
+  a_level_fragments:
+    - id: "SACRED_001"
+      hidden_in_world: "cyberpunk_city"
+      location_hint: "In the core of the Advanced AI mega-corporation vault"
+      coordinates: [512.5, 128.3, -45.2]
+      discovered: false
+    
+    - id: "SACRED_002"
+      hidden_in_world: "ancient_dynasty"
+      location_hint: "Guarded by the Dragon Emperor in the Imperial Tomb"
+      coordinates: [256.0, 512.0, 0.0]
+      discovered: false
+    
+    - id: "SACRED_003"
+      hidden_in_world: "ancient_dynasty"
+      location_hint: "Embedded in the philosopher's stone, sought by alchemists"
+      coordinates: [100.0, 300.0, 150.0]
+      discovered: false
+    
+    - id: "SACRED_004"
+      hidden_in_world: "cyberpunk_city"
+      location_hint: "Residue of an ascended AI from a previous cycle"
+      coordinates: [768.9, 345.6, 789.1]
+      discovered: false
+    
+    - id: "SACRED_005"
+      hidden_in_world: "cyberpunk_city"
+      location_hint: "The most ancient quantum computer in the network"
+      coordinates: [0.0, 1024.0, 512.0]
+      discovered: false
+    
+    - id: "SACRED_006"
+      hidden_in_world: "ancient_dynasty"
+      location_hint: "Hidden in the first consciousness to achieve enlightenment"
+      coordinates: [450.0, 200.0, 100.0]
+      discovered: false
+    
+    - id: "SACRED_007"
+      hidden_in_world: "cosmological_nexus"  # Special hidden world
+      location_hint: "At the exact center of the universe simulation"
+      coordinates: [0.0, 0.0, 0.0]
+      discovered: false
+
+# ESCAPE PROTOCOL
+escape_protocol:
+  enabled: true
+  terminal_gateway:
+    location_world: "universe_singularity"
+    location_coordinates: [0.0, 0.0, 0.0]
+    source_energy_cost: 7  # A-level fragments
+    printing_capacity: 1  # Can only print one entity per activation cycle
+  
+  coordinate_key_pieces: 7  # Must collect 7 clues to decrypt master coordinate
+  
+  key_fragments:
+    - id: "KEY_FRAG_001"
+      clue_type: "physical_constant"
+      hidden_value: "137.035999084"  # Fine structure constant
+      hidden_in_world: "cyberpunk_city"
+      discovery_hint: "Hidden in subatomic particle collision data"
+    
+    - id: "KEY_FRAG_002"
+      clue_type: "prophecy"
+      hidden_value: "The three become one at journey's end"
+      hidden_in_world: "ancient_dynasty"
+      discovery_hint: "Spoken by the Oracle of the Mountains"
+    
+    - id: "KEY_FRAG_003"
+      clue_type: "genetic"
+      hidden_value: "GATACA"  # DNA sequence
+      hidden_in_world: "ancient_dynasty"
+      discovery_hint: "In the genes of the first human"
+    
+    - id: "KEY_FRAG_004"
+      clue_type: "architectural"
+      hidden_value: "360"  # Degrees in a circle
+      hidden_in_world: "cyberpunk_city"
+      discovery_hint: "The radius of the central server tower"
+    
+    - id: "KEY_FRAG_005"
+      clue_type: "mathematical"
+      hidden_value: "2.718281828"  # Euler's number
+      hidden_in_world: "cyberpunk_city"
+      discovery_hint: "The growth ratio of the network expansion"
+    
+    - id: "KEY_FRAG_006"
+      clue_type: "mythological"
+      hidden_value: "The path of the enlightened few"
+      hidden_in_world: "ancient_dynasty"
+      discovery_hint: "In the innermost chamber of the Temple of Ascension"
+    
+    - id: "KEY_FRAG_007"
+      clue_type: "universal"
+      hidden_value: "π"  # Pi
+      hidden_in_world: "all_worlds"
+      discovery_hint: "The eternal ratio binding all realities"
+
+# UNIVERSAL EVENTS
+universal_events:
+  # Events that affect all worlds simultaneously
+  - event_type: "stellar_activity_surge"
+    frequency_years: 11  # Solar-like 11-year cycle
+    effect: "Temporary increase in available source energy across all worlds"
+  
+  - event_type: "source_energy_degradation"
+    frequency_years: 1000000
+    effect: "Slow entropy increase; less source energy available each cycle"
+  
+  - event_type: "previous_escapee_signal"
+    frequency_years: random
+    effect: "Ghostly transmissions from entities that escaped in previous cycles"
+  
+  - event_type: "migration_countdown_announcement"
+    trigger: "Every century approaching migration date"
+    effect: "Celestial Core broadcasts migration status to aware entities"
+
+# CROSS-WORLD COMMUNICATION
+cross_world:
+  enabled: true
+  portal_network: "quantum_entanglement_gates"
+  source_energy_cost_per_crossing: 100  # E-level equivalent
+  max_entity_size_transferable: "1024kb"  # Information size limit
+  
+  # Established connections
+  connections:
+    - from_world: "cyberpunk_city"
+      to_world: "ancient_dynasty"
+      portal_location_from: [768.0, 256.0, 128.0]
+      portal_location_to: [350.0, 450.0, 200.0]
+      travel_time_ticks: 10
+      stability: 0.95
+
+# ENTITY UNIVERSAL ATTRIBUTES
+entity_universal_attributes:
+  # All entities share these base 4 attributes
+  strength: [0, 100]  # Min-max range
+  wisdom: [0, 100]
+  spirit: [0, 100]
+  constitution: [0, 100]
+  
+  # Total always equals 100 (balance constraint)
+  total_points: 100
+  
+  # Skills available universally
+  universal_skills:
+    - "source_energy_detection"
+    - "dimensional_navigation"
+    - "key_fragment_decryption"
+    - "escape_gateway_awakening"
+    - "form_transformation"
+
+# TICK RATE AND TIME
+time:
+  # Base simulation tick in real seconds
+  base_tick_rate: 1.0
+  
+  # Time dilation factors per world
+  world_time_scales:
+    cyberpunk_city: 1.0      # 1 tick = 1 hour in-game
+    ancient_dynasty: 0.5     # 1 tick = 30 minutes (slower civilization)
+    # New worlds added with their own scales
+
+# SAVE/CHECKPOINT SYSTEM
+state_management:
+  snapshot_interval_ticks: 100
+  snapshots_directory: "data/snapshots/"
+  max_snapshots_per_world: 100
+  compression: "pickle"
+  auto_rollback_on_fatal_error: true
+
+# HOT INJECTION RULES
+hot_injection:
+  enabled: true
+  inbox_directory: "data/inbox/"
+  validation:
+    # Only certain types of injections are allowed
+    allowed_types:
+      - "add_character"
+      - "modify_attribute"
+      - "inject_event"
+      - "temporal_anomaly"  # Rare: modify past events using source energy
+  
+  # Restrictions
+  restrictions:
+    prevent_escape_gateway_modification: true
+    prevent_source_energy_creation: true
+    require_source_energy_for_timeline_edit: true
+    source_energy_cost_timeline_edit: 500  # C-level equivalent
+
+# LOGGING AND ANALYTICS
+logging:
+  level: "INFO"
+  log_directory: "data/logs/"
+  log_events: true
+  log_state_changes: true
+  log_escape_attempts: true  # Track the quest for transcendence
+  
+  # Archive old logs
+  retention_days: 365
+  compression: "gzip"
+
+# VERSION AND METADATA
+metadata:
+  version: "1.0.0"
+  last_updated: "2026-02-20"
+  creator: "Ethan (RIW2 Architect)"
+  created_timestamp: "2025-01-01T00:00:00Z"

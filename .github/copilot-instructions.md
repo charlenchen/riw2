@@ -28,10 +28,10 @@ Example patterns:
 
 | Layer | Path | Responsibility |
 |-------|------|-----------------|
-| **Engine** | `src/core/` | Simulation loop, state management, event bus, base entity types |
+| **Engine** | `src/core/` | Simulation loop, state management, event bus, entity types, escape protocol, universe state |
 | **Modules** | `src/modules/` | World rules, Story generation, Game data export |
 | **Utils** | `src/utils/` | LLM client, logging, shared helpers |
-| **Content** | `universe/` | World-specific configs, characters, rules (inherit from `BaseWorld`) |
+| **Content** | `universe/` | World-specific configs, characters, rules (inherit from `BaseWorld`), universal config |
 | **Runtime Data** | `data/` | Snapshots, logs, inbox (for hot injection) |
 
 ### Key Subsystems
@@ -42,6 +42,18 @@ Example patterns:
 - Event system integration for hot injection
 - State serialization/rollback support
 
+**Universe State** ([src/core/universe_state.py](src/core/universe_state.py)):
+- Tracks Celestial Core stellar parameters and migration schedule
+- Manages source energy allocation and consumption across worlds
+- Records coordinate key fragments and escape gateway locations
+- Maintains log of escaped entities
+
+**Escape Protocol** ([src/core/escape_protocol.py](src/core/escape_protocol.py)):
+- The termina gateway system for dimensional transcendence
+- Fragment collection, coordinate key decryption, printing to real universe
+- Supports post-escape form selection (return as god, new form, or stay outside)
+- Central to RIW2's ultimate mystery and gameplay progression
+
 **Event Bus** ([src/core/event_bus.py](src/core/event_bus.py)):
 - Central pub/sub for world state changes
 - `EventTypes` enum for standardized event kinds (character_action, world_change, etc.)
@@ -49,8 +61,9 @@ Example patterns:
 
 **Hot Injection** (`data/inbox/`):
 - JSON files placed here are consumed during tick processing
-- Patterns: add_character, modify_attribute, inject_event
+- Patterns: add_character, modify_attribute, inject_event, temporal_anomaly
 - Files deleted after processing; workflow: check → parse → validate → apply → remove
+- Timeline edits require source energy expenditure
 
 **State Management** ([src/core/state_manager.py](src/core/state_manager.py)):
 - Snapshots saved as pickle files in `data/snapshots/`
@@ -77,27 +90,46 @@ python tools/cli.py --tick-rate 2.0 --world cyberpunk_city
 
 **File Organization**:
 - Config files (`.yaml`) live in `universe/{world_name}/` alongside implementation
+- Universal config in `universe/config.yaml` (shared by all worlds)
 - Prompt templates stored as separate files in `src/modules/story_mod/prompt_templates/` (not hardcoded)
 - World-specific logic as separate module/class per universe, inheriting `BaseWorld`
+- Universe lore and cosmology documented in [UNIVERSE_LORE.md](UNIVERSE_LORE.md)
 
 **Entity Lifecycle**:
 1. Define shape using `@dataclass Entity` subclasses with type hints
 2. Register with world's entity registry
 3. Serialize via `.to_dict()` for snapshots and logs
 4. Deserialize via `.from_dict()` when loading state
+5. Track universal attributes (strength, wisdom, spirit, constitution) shared across all worlds
+
+**Source Energy System**:
+- All cross-world operations consume source energy (E/D/C/B/A tiers)
+- A-level fragments are rarest and required (7 total) for escape attempt
+- Source energy costs defined in `universe/config.yaml` and validated before operations
+- Consumption tracked in `UniverseState.source_energy_consumed`
+
+**Escape Protocol**:
+- Entities must collect 7 A-level source energy fragments scattered across worlds
+- Discover 7 coordinate key clues (hidden in prophecies, constants, genetics, architecture)
+- Decrypt master key using collected clues
+- Activate terminal gateway (costs 7 A-level fragments)
+- Get printed to real universe and achieve transcendence
+- Post-escape, choose to return as god, new form, or remain outside
 
 **Event Pattern**:
 ```python
 # Define in EventTypes enum
 # Emit via: self.event_bus.publish(Event(type=EventTypes.YOUR_EVENT, data={...}))
 # Listen: self.event_bus.subscribe(EventTypes.YOUR_EVENT, handler_function)
+# Universal events propagate across all worlds
 ```
 
 **World Implementation**:
 - Extend `BaseWorld` from `universe/base_world.py`
 - Implement `tick()`, `serialize()`, `deserialize()`
-- Store configuration in `.yaml` (load via PyYAML)
+- Store configuration in `.yaml` (load via PyYAML alongside world implementation)
 - Define initial characters/items in `.json` files
+- Source energy fragments and key locations defined in global `universe/config.yaml`
 
 ## Integration Points
 
