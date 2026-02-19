@@ -1,8 +1,8 @@
-# RIW2 AI Agent Instructions
+# RIWA2 AI Agent Instructions
 
 ## Project Overview
 
-RIW2 is an AI-driven metaverse engine integrating three core systems:
+RIWA2 is an AI-driven metaverse engine integrating three core systems:
 - **World Module**: Logic engine and simulation (physics, rules, actions)
 - **Story Module**: LLM-driven narrative generation from simulation logs
 - **Game Module**: Interactive procedural game generation and UI bridges
@@ -52,7 +52,7 @@ Example patterns:
 - The termina gateway system for dimensional transcendence
 - Fragment collection, coordinate key decryption, printing to real universe
 - Supports post-escape form selection (return as god, new form, or stay outside)
-- Central to RIW2's ultimate mystery and gameplay progression
+- Central to RIWA2's ultimate mystery and gameplay progression
 
 **Event Bus** ([src/core/event_bus.py](src/core/event_bus.py)):
 - Central pub/sub for world state changes
@@ -160,7 +160,7 @@ python tools/cli.py --tick-rate 2.0 --world cyberpunk_city
 
 ## Core Universe Documentation
 
-The RIW2 universe has extensive design documentation that defines mechanics across multiple domains:
+The RIWA2 universe has extensive design documentation that defines mechanics across multiple domains:
 
 **Essential References**:
 - [UNIVERSE_LORE.md](UNIVERSE_LORE.md) - Foundational universe mythology and core systems

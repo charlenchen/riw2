@@ -1,5 +1,5 @@
 """
-RIW2 Utils Module
+RIWA2 Utils Module
 
 Utility functions and helpers.
 """

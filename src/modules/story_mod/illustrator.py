@@ -330,7 +330,7 @@ class Illustrator:
         return f'''<!DOCTYPE html>
 <html>
 <head>
-    <title>RIW2 Image Gallery</title>
+    <title>RIWA2 Image Gallery</title>
     <style>
         body {{ font-family: Arial, sans-serif; background: #1a1a2e; color: #eee; padding: 20px; }}
         h1 {{ text-align: center; color: #e94560; }}
@@ -342,7 +342,7 @@ class Illustrator:
     </style>
 </head>
 <body>
-    <h1>RIW2 Illustration Gallery</h1>
+    <h1>RIWA2 Illustration Gallery</h1>
     <div class="gallery">{images_html}</div>
 </body>
 </html>'''

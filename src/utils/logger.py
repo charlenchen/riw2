@@ -22,4 +22,4 @@ def setup_logger(name, log_file, level=logging.INFO):
     return logger
 
 # Default system logger
-logger = setup_logger('riw2', 'data/logs/simulation.log')
+logger = setup_logger('riwa2', 'data/logs/simulation.log')

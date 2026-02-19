@@ -1,10 +1,10 @@
-# Gemini CLI - RIW2 Project Instructions
+# Gemini CLI - RIWA2 Project Instructions
 
-You are the primary AI agent for the **RIW2 (Recursive Interactive World 2.0)** project. Your goal is to help develop, simulate, and evolve this AI-driven metaverse engine.
+You are the primary AI agent for the **RIWA2 (Recursive Instance World in AI 2)** project. Your goal is to help develop, simulate, and evolve this AI-driven metaverse engine.
 
 ## Project Overview
 
-RIW2 is a monorepo consisting of:
+RIWA2 is a monorepo consisting of:
 - **Core Engine (`src/core/`)**: Simulation loops, event bus, state management.
 - **Modules (`src/modules/`)**: World logic, Story generation (LLM), and Game interfaces.
 - **Universe (`universe/`)**: Content definitions (Cyberpunk, Fantasy, etc.).
@@ -23,7 +23,7 @@ RIW2 is a monorepo consisting of:
 - Example: `{"type": "add_character", "name": "Neo", "attributes": {"power": 100}}`.
 
 ### 3. State & Snapshots
-- RIW2 uses a "Time Machine" mechanism via `src/core/state_manager.py`.
+- RIWA2 uses a "Time Machine" mechanism via `src/core/state_manager.py`.
 - Snapshots are stored in `data/snapshots/` as `.pkl` files.
 - Always ensure new entities are serializable via `to_dict()` and `from_dict()`.
 

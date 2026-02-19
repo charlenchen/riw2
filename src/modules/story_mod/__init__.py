@@ -1,5 +1,5 @@
 """
-RIW2 Story Module
+RIWA2 Story Module
 
 Story generation and illustration.
 """

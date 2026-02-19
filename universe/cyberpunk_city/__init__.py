@@ -1,7 +1,7 @@
 """
 Cyberpunk City Universe Module
 
-A cyberpunk-themed world for RIW2.
+A cyberpunk-themed world for RIWA2.
 """
 
 from universe.cyberpunk_city.world import (

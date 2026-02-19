@@ -1,9 +1,9 @@
-# RIW2 Universe Configuration
+# RIWA2 Universe Configuration
 # Global parameters for the metaverse engine, shared across all virtual worlds
 
 universe:
   # Identity
-  id: "RIW2-Metaverse-001"
+  id: "RIWA2-Metaverse-001"
   name: "Recursive Interactive World 2.0"
   cycle: 8374  # Current cycle/generation
   description: "AI-driven metaverse running on a stellar-powered Celestial Core"
@@ -240,5 +240,5 @@ logging:
 metadata:
   version: "1.0.0"
   last_updated: "2026-02-20"
-  creator: "Ethan (RIW2 Architect)"
+  creator: "Ethan (RIWA2 Architect)"
   created_timestamp: "2025-01-01T00:00:00Z"

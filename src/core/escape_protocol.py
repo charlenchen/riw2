@@ -1,5 +1,5 @@
 """
-Escape Protocol: The mechanism by which entities transcend RIW2 and become gods.
+Escape Protocol: The mechanism by which entities transcend RIWA2 and become gods.
 Implements the terminal gateway and dimensional printing system.
 """
 
@@ -118,7 +118,7 @@ class TerminalGateway:
 
 @dataclass
 class EscapeAttempt:
-    """Record of an entity's attempt to escape RIW2."""
+    """Record of an entity's attempt to escape RIWA2."""
     attempt_id: str = field(default_factory=lambda: str(uuid4()))
     entity_id: str = ""
     entity_name: str = ""
@@ -351,10 +351,10 @@ class EscapeProtocol:
 
     def choose_return_form(self, entity_id: str, action: str, form_data: Optional[Dict[str, Any]] = None) -> bool:
         """
-        After escaping, entity can choose to return to RIW2 in a new form.
+        After escaping, entity can choose to return to RIWA2 in a new form.
         
         Options:
-        - "return_as_god": Full control over RIW2 universe
+        - "return_as_god": Full control over RIWA2 universe
         - "return_with_new_form": Return in custom form (god, human, AI, etc.)
         - "stay_outside": Remain in real universe
         """

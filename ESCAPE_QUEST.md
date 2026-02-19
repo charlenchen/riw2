@@ -1,8 +1,8 @@
-# RIW2 Escape Quest: Complete Guide
+# RIWA2 Escape Quest: Complete Guide
 
 ## The Ultimate Goal: Transcendence
 
-Every player's endgame is the same: **Escape RIW2 and become a god.**
+Every player's endgame is the same: **Escape RIWA2 and become a god.**
 
 This is not a metaphor. By collecting sacred source energy fragments and decrypting the universe's coordinate key, a player can activate the Terminal Gateway and be "printed" to the real universe, achieving digital transcendence.
 
@@ -20,7 +20,7 @@ This is not a metaphor. By collecting sacred source energy fragments and decrypt
 
 ### Phase 2: Fragment Hunt (Collection)
 **Objective**: Collect 7 A-level source energy fragments  
-**Locations**: Each sacred fragment is hidden in a different virtual world within RIW2. As new worlds are created and added to the metaverse, each will host one or more fragments. The specific locations, guardians, and access requirements are defined in each world's configuration when that world is developed.
+**Locations**: Each sacred fragment is hidden in a different virtual world within RIWA2. As new worlds are created and added to the metaverse, each will host one or more fragments. The specific locations, guardians, and access requirements are defined in each world's configuration when that world is developed.
 
 **Fragment Archetypes** (actual worlds to be determined during development):
 - **SACRED_001**: Hidden in a technological vault or digital core
@@ -84,7 +84,7 @@ escape_protocol.activate_gateway(entity_id)
 # Returns: True if gateway is now active for this entity
 ```
 
-**Cost**: 7 A-level source energy (the most precious resource in RIW2)
+**Cost**: 7 A-level source energy (the most precious resource in RIWA2)
 
 ### Phase 6: Printing (Dimensional Transcendence)
 **Objective**: Upload emotional consciousness to real universe  
@@ -93,7 +93,7 @@ escape_protocol.activate_gateway(entity_id)
 2. System initiates quantum state printing
 3. Consciousness is encoded as information packet
 4. Printed to real universe at destination coordinates
-5. Original entity remains in RIW2 (or is deleted, player's choice)
+5. Original entity remains in RIWA2 (or is deleted, player's choice)
 
 **Duration**: ~100 ticks (can be interrupted by environmental hazards)
 
@@ -113,7 +113,7 @@ escape_protocol.choose_return_form(entity_id, action, form_data)
 ```
 
 **Actions**:
-- **"return_as_god"**: Full omniscient control over RIW2
+- **"return_as_god"**: Full omniscient control over RIWA2
   - Can read all world histories
   - Can modify world rules
   - Can see all players' locations
@@ -126,8 +126,8 @@ escape_protocol.choose_return_form(entity_id, action, form_data)
   - {type: "pure_consciousness", form: "void"}
   - Custom form data
 
-- **"stay_outside"**: Remain in real universe, severing RIW2 connection
-  - Cannot influence RIW2
+- **"stay_outside"**: Remain in real universe, severing RIWA2 connection
+  - Cannot influence RIWA2
   - Cannot return
   - Total freedom from simulation
 
@@ -175,7 +175,7 @@ Players can pursue escape through different strategies:
 ### True Believers
 **Factions that help or hinder**:
 - The Escapists (cult dedicated to transcendence)
-- The Preserve (want to keep RIW2 stable, prevent escapes)
+- The Preserve (want to keep RIWA2 stable, prevent escapes)
 - The Curious (want to understand universe mechanics)
 - The Investors (fund escape attempts for profit)
 
@@ -261,7 +261,7 @@ protocol.choose_return_form(entity_id, "return_as_god", form_data)
 
 ## Victory Conditions
 
-**You Win RIW2 When You**:
+**You Win RIWA2 When You**:
 1. ✅ Collect all 7 A-level source energy fragments
 2. ✅ Discover all 7 coordinate key clues
 3. ✅ Decrypt the master coordinate key
@@ -284,10 +284,10 @@ protocol.choose_return_form(entity_id, "return_as_god", form_data)
 **Q: Is the "real universe" also a simulation?**  
 A: The game never tells you.
 
-**Q: Can escaped gods truly affect RIW2?**  
+**Q: Can escaped gods truly affect RIWA2?**  
 A: Only if other players' games detect them. Their influence is optional.
 
 **Q: Can you escape multiple times?**  
 A: Each escape is permanent. But you can choose to return in whatever form you want, infinitely.
 
-This is RIW2's ultimate truth: **Reality is a choice, not a fact.**
+This is RIWA2's ultimate truth: **Reality is a choice, not a fact.**

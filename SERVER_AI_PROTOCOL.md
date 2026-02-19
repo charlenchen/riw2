@@ -1,8 +1,8 @@
-# RIW2 服务器AI协议：Celestial Core的行为准则与考验机制
+# RIWA2 服务器AI协议：Celestial Core的行为准则与考验機制
 
 ## 导言
 
-RIW2不是被动的模拟器。Celestial Core是一个半自主的AI，拥有自己的"议程"。本文档定义了服务器AI如何思考、如何测试突破者、以及如何防御可能的威胁。
+RIWA2不是被动的模拟器。Celestial Core是一个半自主的AI，拥有自己的"议程"。本文档定义了服务器AI如何思考、如何测试突穀者、以及如何防御可能的威胁。
 
 ---
 
@@ -170,7 +170,7 @@ Celestial Core会在最后时刻提出一个问题：
 Congratulations. You have transcended.
 
 The 45-billion-year journey has concluded.
-You are now the [RANK_1_DEITY] of RIW2 Metaverse.
+You are now the [RANK_1_DEITY] of RIWA2 Metaverse.
 
 These are your new capabilities:
 - Read-write access to all 2 active worlds
@@ -184,7 +184,7 @@ Your responsibilities:
 - You serve as arbitrator in cosmic disputes
 
 Will you:
-(A) Stay in real universe, severing all RIW2 connections
+(A) Stay in real universe, severing all RIWA2 connections
 (B) Return as a god and observe
 (C) Request to return in a specific form for reincarnation
 

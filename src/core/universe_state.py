@@ -1,5 +1,5 @@
 """
-Universe-level state management for RIW2.
+Universe-level state management for RIWA2.
 Tracks cosmic resources, stellar parameters, and escape conditions.
 """
 
@@ -11,7 +11,7 @@ import json
 
 
 class SourceEnergyLevel(Enum):
-    """Energy classification in RIW2 universe."""
+    """Energy classification in RIWA2 universe."""
     E_COMMON = "E_Common"           # Daily consumption, renewable
     D_RARE = "D_Rare"               # Cross-world travel, ability enhancement
     C_PRECIOUS = "C_Precious"        # History rewrite, world repair
@@ -57,7 +57,7 @@ class SourceEnergyFragment:
 
 @dataclass
 class StarData:
-    """Physical parameters of a star hosting RIW2 Celestial Core."""
+    """Physical parameters of a star hosting RIWA2 Celestial Core."""
     name: str                      # e.g., "Sol-001"
     catalog_id: str                # Unique identifier
     lifespan_remaining_years: float  # How long until supernova/death
@@ -121,8 +121,8 @@ class UniverseMigrationPlan:
 
 @dataclass
 class UniverseState:
-    """Global state of RIW2 universe."""
-    universe_id: str = "RIW2-Metaverse-001"
+    """Global state of RIWA2 universe."""
+    universe_id: str = "RIWA2-Metaverse-001"
     cycle_number: int = 8374  # Current universe generation
     creation_timestamp: str = field(default_factory=lambda: datetime.now().isoformat())
     
@@ -185,7 +185,7 @@ class UniverseState:
     @classmethod
     def from_dict(cls, data: dict) -> 'UniverseState':
         return cls(
-            universe_id=data.get('universe_id', 'RIW2-Metaverse-001'),
+            universe_id=data.get('universe_id', 'RIWA2-Metaverse-001'),
             cycle_number=data.get('cycle_number', 8374),
             creation_timestamp=data.get('creation_timestamp', datetime.now().isoformat()),
             current_star=StarData.from_dict(data['current_star']),

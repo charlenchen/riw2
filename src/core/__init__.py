@@ -1,5 +1,5 @@
 """
-RIW2 Core Module
+RIWA2 Core Module
 
 Core simulation engine components.
 """

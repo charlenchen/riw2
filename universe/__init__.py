@@ -1,5 +1,5 @@
 """
-RIW2 Universe Module
+RIWA2 Universe Module
 
 World definitions and base classes.
 """

@@ -1,7 +1,7 @@
 """
 Cyberpunk City World Module
 
-A cyberpunk-themed world implementation for RIW2.
+A cyberpunk-themed world implementation for RIWA2.
 Features corporate intrigue, netrunning, and street-level survival.
 """
 
