@@ -1,5 +1,5 @@
 """
-RIW2 Game Module
+RIWA2 Game Module
 
 Game interfaces and bridges.
 """

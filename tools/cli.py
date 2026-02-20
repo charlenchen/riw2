@@ -9,7 +9,7 @@ from src.core.simulation import Simulation
 from universe.base_world import WorldRegistry
 
 def main():
-    parser = argparse.ArgumentParser(description="RIW2 CLI - World Engine")
+    parser = argparse.ArgumentParser(description="RIWA2 CLI - World Engine")
     parser.add_argument("--tick-rate", type=float, default=1.0, help="Seconds per tick (default: 1.0)")
     parser.add_argument("--world", type=str, default="default_world", help="World ID to simulate")
     parser.add_argument("--no-story", action="store_true", help="Disable story generation")
@@ -17,7 +17,7 @@ def main():
     
     args = parser.parse_args()
 
-    print(f"RIW2 CLI - Starting Simulation: {args.world}")
+    print(f"RIWA2 CLI - Starting Simulation: {args.world}")
     
     # In a real scenario, we might load the world from the registry or a factory
     # For now, we'll pass the world_id to the simulation or let it handle it

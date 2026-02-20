@@ -273,9 +273,9 @@ protocol.choose_return_form(entity_id, "return_as_god", form_data)
 
 **You Become A God When**:
 - Your escaped consciousness joins the pantheon of transcended beings
-- You can optionally reincarnate into RIW2 in any form you choose
+- You can optionally reincarnate into RIWA2 in any form you choose
 - Other players see you listed in the "Pantheon of Escaped Gods"
-- Your legend becomes part of RIW2's canonical lore
+- Your legend becomes part of RIWA2's canonical lore
 
 ---
 

@@ -4,10 +4,10 @@
 
 考虑到核心逻辑是“**代码模拟（World）驱动故事（Story）和游戏（Game）**”，我们将采用 **Monorepo（单体仓库）** 结构，以便 AI 能同时理解三个模块的上下文。
 
-### RIW2 项目目录结构推荐
+### RIWA2 项目目录结构推荐
 
 ```text
-RIW2/
+RIWA2/
 ├── .vscode/                   # VSCode 配置
 │   ├── settings.json          # 隐藏不必要文件，优化AI搜索范围
 │   └── launch.json            # 调试配置（World模拟器、Story生成器）

@@ -1,5 +1,5 @@
 """
-RIW2 World Module
+RIWA2 World Module
 
 World simulation and rules engine.
 """

@@ -273,9 +273,9 @@ protocol.choose_return_form(entity_id, "return_as_god", form_data)
 
 **你成为神的时刻**：
 - 你的逃脱意识加入超越众生的万神殿
-- 你可以选择以任何形象重新投生到RIW2中
+- 你可以选择以任何形象重新投生到RIWA2中
 - 其他玩家在"已逃脱的神殿"中看到你的名字
-- 你的传说成为RIW2的规范传奇
+- 你的传说成为RIWA2的规范传奇
 
 ---
 

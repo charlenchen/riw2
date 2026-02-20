@@ -14,7 +14,7 @@ from universe.base_world import BaseWorld, WorldConfig, WorldRegistry
 
 class Simulation:
     """
-    Main simulation engine for RIW2.
+    Main simulation engine for RIWA2.
     Integrates World, Story, and Game modules with hot injection and time machine support.
     """
 
@@ -90,7 +90,7 @@ class Simulation:
 
     def start(self):
         """Start the simulation engine."""
-        logger.info("Starting RIW2 Simulation Engine...")
+        logger.info("Starting RIWA2 Simulation Engine...")
         self.is_running = True
         self.run_loop()
 

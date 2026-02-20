@@ -37,7 +37,7 @@ class TextRPG:
     def _print_welcome(self):
         """Print welcome message."""
         print("\n" + "=" * 50)
-        print("       RIW2 - Text RPG Interface")
+        print("       RIWA2 - Text RPG Interface")
         print("=" * 50)
         print(f"Welcome, {self.player.name}!")
         print("Type 'help' for available commands.\n")
@@ -344,7 +344,7 @@ Available Commands:
 
         character = Character(
             name=name,
-            description=f"A brave adventurer in the world of RIW2",
+            description=f"A brave adventurer in the world of RIWA2",
             attributes=attributes
         )
 
