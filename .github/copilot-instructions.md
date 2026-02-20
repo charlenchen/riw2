@@ -162,14 +162,16 @@ python tools/cli.py --tick-rate 2.0 --world cyberpunk_city
 
 The RIWA2 universe has extensive design documentation that defines mechanics across multiple domains:
 
-**Essential References**:
-- [UNIVERSE_LORE.md](UNIVERSE_LORE.md) - Foundational universe mythology and core systems
-- [SOURCE_ENERGY.md](SOURCE_ENERGY.md) - Complete economic and resource system (regeneration, decay, tier system)
-- [ESCAPE_QUEST.md](ESCAPE_QUEST.md) & [ESCAPE_QUEST_ZH.md](ESCAPE_QUEST_ZH.md) - Game objectives and victory conditions
-- [ESCAPE_COMPETITION.md](ESCAPE_COMPETITION.md) - Multi-player competition mechanics, alliance systems, betrayal risks
-- [CROSS_WORLD_RULES.md](CROSS_WORLD_RULES.md) - Physics compatibility, ability scaling, time dilation effects
-- [SERVER_AI_PROTOCOL.md](SERVER_AI_PROTOCOL.md) - Celestial Core behavior, testing mechanisms, defense systems
-- [POST_ESCAPE_INTERACTION.md](POST_ESCAPE_INTERACTION.md) - Godhood powers, divine communication, eternal universe engagement
+**Essential References** (all in [lore/](../lore/)):
+- [UNIVERSE_LORE.md](../lore/UNIVERSE_LORE.md) - Foundational universe mythology and core systems
+- [SOURCE_ENERGY.md](../lore/SOURCE_ENERGY.md) - Complete economic and resource system (regeneration, decay, tier system)
+- [ESCAPE_QUEST.md](../lore/ESCAPE_QUEST.md) & [ESCAPE_QUEST_ZH.md](../lore/ESCAPE_QUEST_ZH.md) - Game objectives and victory conditions
+- [ESCAPE_COMPETITION.md](../lore/ESCAPE_COMPETITION.md) - Multi-player competition mechanics, alliance systems, betrayal risks
+- [CROSS_WORLD_RULES.md](../lore/CROSS_WORLD_RULES.md) - Physics compatibility, ability scaling, time dilation effects
+- [SERVER_AI_PROTOCOL.md](../lore/SERVER_AI_PROTOCOL.md) - Celestial Core behavior, testing mechanisms, defense systems
+- [POST_ESCAPE_INTERACTION.md](../lore/POST_ESCAPE_INTERACTION.md) - Godhood powers, divine communication, eternal universe engagement
+
+For complete universe documentation index, see [lore/README.md](../lore/README.md).
 
 When implementing features, cross-reference these documents to ensure consistency with established lore.
 
