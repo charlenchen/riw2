@@ -1,4 +1,4 @@
-# RIWA2 (Recursive Interactive World 2.0)
+# RIWA2 (Recursive Interactive World in AI 2.0)
 
 RIWA2 is an AI-driven, community-participatory, evolvable cross-media metaverse engine.
 
